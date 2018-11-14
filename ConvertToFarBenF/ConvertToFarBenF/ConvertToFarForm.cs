@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ConvertToFarBenF
 {
-    public partial class ConvertToFarForm : Form
+    public partial class frmConvertToFar : Form
     {
-        public ConvertToFarForm()
+        public frmConvertToFar()
         {
             InitializeComponent();
+        }
+
+        public void ConvertTemperature(int celsius)
+        {
+
+        }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

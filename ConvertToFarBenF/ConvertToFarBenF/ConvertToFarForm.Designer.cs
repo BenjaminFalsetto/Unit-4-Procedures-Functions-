@@ -1,6 +1,6 @@
 ﻿namespace ConvertToFarBenF
 {
-    partial class ConvertToFarForm
+    partial class frmConvertToFar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnConvert = new System.Windows.Forms.Button();
+            this.txtCelsius = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // btnConvert
+            // 
+            this.btnConvert.Location = new System.Drawing.Point(105, 62);
+            this.btnConvert.Name = "btnConvert";
+            this.btnConvert.Size = new System.Drawing.Size(75, 23);
+            this.btnConvert.TabIndex = 0;
+            this.btnConvert.Text = "Convert";
+            this.btnConvert.UseVisualStyleBackColor = true;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
+            // 
+            // txtCelsius
+            // 
+            this.txtCelsius.Location = new System.Drawing.Point(92, 122);
+            this.txtCelsius.Name = "txtCelsius";
+            this.txtCelsius.Size = new System.Drawing.Size(100, 20);
+            this.txtCelsius.TabIndex = 1;
+            // 
+            // frmConvertToFar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.txtCelsius);
+            this.Controls.Add(this.btnConvert);
+            this.Name = "frmConvertToFar";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnConvert;
+        private System.Windows.Forms.TextBox txtCelsius;
     }
 }
 
