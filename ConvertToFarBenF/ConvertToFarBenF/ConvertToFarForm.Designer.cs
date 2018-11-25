@@ -57,6 +57,7 @@
             this.Controls.Add(this.txtCelsius);
             this.Controls.Add(this.btnConvert);
             this.Name = "frmConvertToFar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

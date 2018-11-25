@@ -17,14 +17,18 @@ namespace ConvertToFarBenF
             InitializeComponent();
         }
 
-        public void ConvertTemperature(int celsius)
+        public void ConvertTemperature(double celsius)
         {
-
+            double farenheit;
+            farenheit = ((double)(9) / (double)(5)) * celsius + 32;
+            MessageBox.Show("The temperature in farenheit is " + farenheit);
         }
 
         private void btnConvert_Click(object sender, EventArgs e)
         {
-
+            double celsius;
+            celsius = double.Parse(txtCelsius.Text);
+            ConvertTemperature(celsius);
         }
     }
 }
