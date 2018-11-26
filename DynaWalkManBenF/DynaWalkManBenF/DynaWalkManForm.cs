@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace DynaWalkManBenF
 {
@@ -21,7 +22,7 @@ namespace DynaWalkManBenF
         {
             //generate each picture box on the form
             GeneratePictureBox(61, 78);
-            GeneratePictureBox(4640, 78);
+            GeneratePictureBox(464, 78);
             GeneratePictureBox(61, 358);
             GeneratePictureBox(464, 358);
         }
@@ -62,7 +63,7 @@ namespace DynaWalkManBenF
             {
                 if (pictureFrameCounter == 1)
                 {
-                    tmpPicMan.Image = Properties.Resources.walk;
+                    tmpPicMan.Image = Properties.Resources.walk1;
                 }
                 if (pictureFrameCounter == 2)
                 {
@@ -100,6 +101,9 @@ namespace DynaWalkManBenF
                 {
                     tmpPicMan.Image = Properties.Resources.walk10;
                 }
+
+                pictureFrameCounter++;
+                Thread.Sleep(100);
             }
         }
     }

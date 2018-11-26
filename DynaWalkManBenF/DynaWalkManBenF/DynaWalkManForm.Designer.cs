@@ -34,12 +34,13 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(363, 214);
+            this.btnStart.Location = new System.Drawing.Point(363, 300);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Clicked);
             // 
             // lblInstructions
             // 
@@ -55,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 622);
             this.Controls.Add(this.lblInstructions);
             this.Controls.Add(this.btnStart);
             this.Name = "DynaWalkManForm";
