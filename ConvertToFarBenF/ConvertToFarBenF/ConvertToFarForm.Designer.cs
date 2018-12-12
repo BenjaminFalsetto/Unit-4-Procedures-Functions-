@@ -58,7 +58,7 @@
             this.Controls.Add(this.btnConvert);
             this.Name = "frmConvertToFar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Temperature Converter Benjamin Falsetto";
             this.ResumeLayout(false);
             this.PerformLayout();
 

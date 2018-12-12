@@ -16,7 +16,7 @@ namespace PassByRefBenF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPassByRefBenF());
+            Application.Run(new PassByRefForm());
         }
     }
 }
