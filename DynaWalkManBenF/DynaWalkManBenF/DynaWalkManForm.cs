@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/12/14
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #33 - Dynamic Walking man
+ * This program changes images to make a figure seem like it's walking when dynamicly
+ * created picture boxes are clicked
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -103,6 +112,7 @@ namespace DynaWalkManBenF
                 }
 
                 pictureFrameCounter++;
+                this.Refresh();
                 Thread.Sleep(100);
             }
         }
